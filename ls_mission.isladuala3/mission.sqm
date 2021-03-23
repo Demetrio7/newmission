@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=97;
+		nextID=139;
 	};
 	class LayerIndexProvider
 	{
-		nextID=16;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={1446.3839,22.149427,640.17706};
-		dir[]={0.064579062,-0.59585863,-0.80056041};
-		up[]={0.047909886,0.80306989,-0.5939433};
-		aside[]={-0.9968186,9.3129347e-007,-0.080409087};
+		pos[]={1430.3418,9.7304211,582.32379};
+		dir[]={-0.88373607,-0.46809462,0.011632414};
+		up[]={-0.46811345,0.88361543,0.0061662272};
+		aside[]={0.013166174,1.4913373e-006,1.0000213};
 	};
 };
 binarizationWanted=0;
@@ -175,7 +175,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -208,7 +208,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=42;
+		items=44;
 		class Item0
 		{
 			dataType="Logic";
@@ -2599,6 +2599,65 @@ class Mission
 			};
 			id=96;
 			type="3as_FOB_Light_Tall_Prop";
+		};
+		class Item42
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1409.401,4.6599998,582.00598};
+				angles[]={0,1.6059299,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="qi_spawn_1";
+				createAsSimpleObject=1;
+			};
+			id=97;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=1.8099999;
+		};
+		class Item43
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1418.027,3.7710075,590.38};
+				angles[]={0,0.58646554,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="call{this addAction[""<t color='#FF0000'>Консоль</t>"",{_this call LS_fnc_initSpawner},""QiSpawn"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];}";
+				disableSimulation=1;
+			};
+			id=98;
+			type="OPTRE_RS_ConsoleCorvette_SysGreen";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
