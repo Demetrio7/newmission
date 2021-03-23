@@ -295,3 +295,36 @@ class SsdSpawn
 		{"Точка №1",{"ssd_spawn_1"},true}
 	};
 };
+
+class QiSpawn
+{	
+	conditionToAccess = "true";
+
+	vehicles[] = 
+	{
+		{"=====Наземная техника=====","","","","",""},
+		{
+			"BARC спидер",
+			"ls_ground_barc",
+			"qi_count_spawn_1",
+			3,
+			"gui_spawner\images\vehicles\barc.paa"
+		},
+		{
+			"Warthog 8ми местный",
+			"OPTRE_M813_TT",
+                        "qi_count_spawn_2",
+			2
+		},
+		{
+			"Warthog 4ёх местный",
+			"OPTRE_M12_FAV",
+			"qi_count_spawn_3",
+			2
+		}
+	};
+	spawnpoints[] = 
+	{
+		{"Точка №1",{"qi_spawn_1"},true}
+	};
+};
